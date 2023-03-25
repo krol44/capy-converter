@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+option go_package = "./pkg/converter";
+
+service Converter {
+  // converting gif to webm (vp9)
+  rpc GifToWebM (GifToWebMType) returns (GifToWebMType) {}
+}
+
+message GifToWebMType {
+  bytes file = 1;
+}
