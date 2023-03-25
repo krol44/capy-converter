@@ -6,7 +6,7 @@ Converting files, works through grpc
 docker run -d --restart=unless-stopped --log-opt max-size=5m \
  -p 127.0.0.1:3003:3003 \
  -e MAX_FILE_SIZE_MB="100" \
- --name=capy-converter krol44/capy-converter:latest
+ --name=capy-converter ghcr.io/krol44/capy-converter:latest
 ```
 
 ## Api, proto model:
